@@ -12,9 +12,7 @@ export const Filter = () => {
         type="text"
         name="filter"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-        onChange={event =>
-          dispatch(setFilterValue(event.target.value.toLowerCase()))
-        }
+        onChange={event => dispatch(setFilterValue(event.target.value))}
       />
     </label>
   );
